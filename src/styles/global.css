@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+@plugin "@tailwindcss/forms";
+@import '@splidejs/splide/dist/css/splide.min.css';
+
+html {
+  @apply scroll-smooth antialiased;
+}
+body {
+  @apply font-sans text-slate-950 text-lg leading-relaxed sm:leading-normal;
+}
+.caixa {
+  @apply mx-auto w-[90%] max-w-7xl relative;
+}
+h1,
+h2 {
+  @apply font-display font-bold;
+}
+button:not(:disabled),
+[role="button"]:not(:disabled) {
+  cursor: pointer;
+}
+a,
+button {
+  @apply transition-all duration-200;
+}
+.boton {
+  @apply shadow text-white pt-[10px] pb-[12px] max-w-sm flex items-center gap-3 px-10 rounded-full font-semibold focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none;
+}
+.boton.negro {
+  @apply bg-slate-950 hover:bg-slate-800 focus:bg-slate-800;
+}
+.boton.azul {
+  @apply bg-cyan-500 hover:bg-cyan-600 focus:bg-cyan-600;
+}
+.boton.gris {
+  @apply bg-slate-100 hover:bg-slate-200 focus:bg-slate-200 text-cyan-500;
+}
+.boton.blanco {
+  @apply px-6 bg-white hover:bg-slate-100 focus:bg-slate-100 font-medium text-slate-950 text-sm;
+}
+.boton.outline {
+  @apply px-6 border-1 border-white hover:border-slate-300 focus:border-slate-300 font-bold shadow-none text-sm;
+}
+.boton.accede {
+  @apply size-12 px-0 flex justify-center lg:size-auto lg:px-6;
+}
+
+@theme {
+  --font-sans: "Manrope Variable", sans-serif;
+  --font-display: "Oswald Variable", sans-serif;
+  --aspect-raiz: 1.4 / 1;
+  --aspect-libro: 1 / 1.8;
+}
