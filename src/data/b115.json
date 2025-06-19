@@ -1,0 +1,20 @@
+{
+  "nombre": "BRANCO 11,5%",
+  "nutricion": { 
+    "valor": "280 kJ/ 67 kcal", 
+    "grasas": "0",
+    "saturadas": "0",
+    "hidratos": "0,8",
+    "azucares": "0,1",
+    "proteinas": "0",
+    "sal": "0"},
+  "ingredientes": "Uvas, conservadores (Bisulfito potásico (E-228))",
+  "info": {
+    "tipo": "Vino",
+    "alcohol": "11.5",
+    "cosecha": "2024",
+    "neta": "750",
+    "azucar": "Seco",
+    "color": "Blanco"
+  }
+}

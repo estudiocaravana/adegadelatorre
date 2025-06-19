@@ -1,0 +1,68 @@
+---
+const { data } = Astro.props;
+---
+
+<div class="caixa !max-w-md py-12">
+  <div class="flex items-end gap-3">
+    <div class="py-0.5">
+      <svg class="size-15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 22h8"></path><path d="M7 10h10"></path><path d="M12 15v7"></path><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"></path>
+      </svg>
+    </div>
+    <div>
+      Tipo de vino:
+      <div class="text-2xl font-bold">{data.nombre}</div>
+    </div>
+  </div>
+  <div class="font-bold mt-12 mb-3 text-xl flex items-center">
+    <div class="flex-1">Información nutricional</div>
+    <div>Por 100 ml</div>
+  </div>
+  <hr class="border-2" />
+  <div class="grid grid-cols-4 gap-y-3 mt-6">
+    <div class="col-span-2">Valor energético</div>
+    <div class="text-right col-span-2">{data.nutricion.valor}</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Grasas</div>
+    <div class="text-right">{data.nutricion.grasas} g</div>
+    <div class="col-span-3">de las cuales saturadas</div>
+    <div class="text-right">{data.nutricion.saturadas} g</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Hidratos de carbono</div>
+    <div class="text-right">{data.nutricion.hidratos} g</div>
+    <div class="col-span-3">de los cuales azúcares</div>
+    <div class="text-right">{data.nutricion.azucares} g</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Proteínas</div>
+    <div class="text-right">{data.nutricion.proteinas} g</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Sal</div>
+    <div class="text-right">{data.nutricion.sal} g</div>
+  </div>
+  <!-- Ingredientes -->
+  <div class="font-bold mt-12 mb-3 text-xl">Ingredientes</div>
+  <hr class="border-2" />
+  <div class="mt-6">{data.ingredientes}</div>
+  <!-- Producto -->
+  <div class="font-bold mt-12 mb-3 text-xl">Información del producto</div>
+  <hr class="border-2" />
+  <div class="grid grid-cols-4 gap-y-3 mt-6">
+    <div class="col-span-3">Tipo de producto</div>
+    <div class="text-right">{data.info.tipo}</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Alcohol</div>
+    <div class="text-right">{data.info.alcohol}% vol.</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Año de cosecha</div>
+    <div class="text-right">{data.info.cosecha}</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Cantidad neta</div>
+    <div class="text-right">{data.info.neta} ml</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Contenido de azúcar</div>
+    <div class="text-right">{data.info.azucar}</div>
+    <hr class="col-span-4" />
+    <div class="col-span-3">Color del vino</div>
+    <div class="text-right">{data.info.color}</div>
+  </div>
+</div>

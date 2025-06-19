@@ -1,0 +1,20 @@
+{
+  "nombre": "TINTO 11%",
+  "nutricion": { 
+    "valor": "268 kJ/ 64 kcal", 
+    "grasas": "0",
+    "saturadas": "0",
+    "hidratos": "0,9",
+    "azucares": "0,2",
+    "proteinas": "0",
+    "sal": "0"},
+  "ingredientes": "Uvas, conservadores (Bisulfito potásico (E-228))",
+  "info": {
+    "tipo": "Vino",
+    "alcohol": "11",
+    "cosecha": "2024",
+    "neta": "750",
+    "azucar": "Seco",
+    "color": "Tinto"
+  }
+}
